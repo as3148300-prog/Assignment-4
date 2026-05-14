@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 70px calc(100% - 70px) 0px;
+}
+
+ 
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 50px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+
+.brand h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+    letter-spacing: -2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+.icon-group {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.icon-group i {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.bag-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bag-btn i {
+    color: white;
+    font-size: 22px;
+}
+
+ 
+
+.banner {
+    border-radius: 2px solid black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.explore-tag {
+    width: 10%;
+    position: absolute;
+    right: 7%;
+    top: 25%;
+}
+
+.flower-left-top {
+    width: 8%;
+    position: absolute;
+    left: 5%;
+    top: 12%;
+}
+
+.flower-left-bottom {
+    width: 5%;
+    position: absolute;
+    left: 24%;
+    top: 25%;
+}
+
+.flower-right-top {
+    width: 7%;
+    position: absolute;
+    right: 4%;
+    top: 12%;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.banner-left-upper {
+    width: 80%;
+    height: 35vh;
+}
+
+.season-label {
+    position: absolute;
+    top: 25%;
+    font-size: 1.2em;
+}
+
+.season-heading {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 27%;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.banner-left-image {
+    background-image: url(img-1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    height: 45%;
+    width: 80%;
+    background-color: rgb(136, 237, 237);
+}
+
+.banner-right {
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.banner-right-upper {
+    display: flex;
+    margin-top: 1%;
+    width: fit-content;
+    margin-left: 10%;
+}
+
+.banner-right-upper h1 {
+    line-height: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.banner-right-lower {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 100%);
+    padding: 0 30px;
+    position: relative;
+}
+
+.flower-right-bottom {
+    width: 15%;
+    position: absolute;
+    top: 85%;
+    right: 7%;
+}
+
+.grid-col-one {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 20px;
+    padding: 30px 0;
+    width: 80%;
+}
+
+.grid-img-small-one {
+    background-color: rgb(154, 192, 226);
+    background-image: url(img-2.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    justify-self: center;
+    border-radius: 30px;
+}
+
+.grid-img-big-one {
+    background-color: rgb(13, 116, 207);
+    background-image: url(img-3.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    justify-self: center;
+    border-radius: 30px;
+}
+
+.grid-col-two {
+    background-color: rgb(117, 181, 52);
+    border-radius: 30px;
+    width: 100%;
+    background-image: url(img-4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.star-icon {
+    width: 5%;
+    position: absolute;
+    top: -7%;
+    left: 36%;
+}
+
+.grid-col-three {
+    display: grid;
+    grid-template-rows: 1.4fr 1fr;
+    gap: 20px;
+    padding: 30px 0;
+    width: 80%;
+    margin-left: 3.5vw;
+}
+
+.grid-img-small-two {
+    background-image: url(img-6.png);
+    background-position: center;
+    background-size: cover;
+    background-color: coral;
+    width: 100%;
+    justify-self: center;
+    border-radius: 30px;
+}
+
+.grid-img-big-two {
+    background-image: url(img-5.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(189, 101, 69);
+    width: 100%;
+    justify-self: center;
+    border-radius: 30px;
+}
+
+.grid-col-four {
+    background-image: url(img-7.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 8%;
+    background-color: darkgray;
+    height: 55%;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+}
+
+ 
+
+.bottom-bar {
+    width: 100%;
+    padding: 0 4%;
+    margin-top: 0%;
+    border-radius: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    position: relative;
+}
+
+.deco-flower {
+    width: 8%;
+    left: 34%;
+    position: absolute;
+}
+
+.quote-block p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 2;
+    margin-top: 1vw;
+}
+
+.quote-block h1 {
+    margin-top: 3vw;
+    font-size: 3vw;
+    width: fit-content;
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 500;
+    font-style: normal;
+    line-height: .7em;
+}
+
+.yellow-line {
+    height: 7px;
+    width: 100%;
+    background-color: #FCD652;
+}
+
+.scroll-btn {
+    height: 50px;
+    border-radius: 15px;
+    width: 150px;
+    background-color: #f7f7f7;
+    border: 2px solid rgb(146, 142, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-btn h3 {
+    font-size: 1vw;
+    color: grey;
+}
+
+.scroll-btn i {
+    font-size: 1vw;
+    color: grey;
+}
+
+.blog-entry {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 2vw;
+    height: 100%;
+}
+
+.blog-number h1 {
+    font-size: 3.2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+
+.blog-info p {
+    margin-bottom: .6vw;
+}
+
+.blog-arrow {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.blog-arrow i {
+    color: white;
+    font-size: 1.6vw;
+}
+
+
+ 
+
+#all-rights {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 13%;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f2eb;
+    border-top: 1px solid #d8d2c7;
+}
+
+#all-rights p {
+    color: #5e5a52;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#all-rights p a {
+    color: #0FBC9F;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#all-rights p a:hover {
+    color: #0b8f79;
+}
